@@ -1,20 +1,10 @@
-00:24:02.068 [main] INFO  com.api.test.UserTests.testCreateUser(UserTests.java:55)oggger - *****Creating User*****
-00:24:06.192 [main] INFO  com.api.test.UserTests.testGetUser(UserTests.java:38)oggger - *****Getting User information******
-00:24:06.471 [main] INFO  com.api.test.UserTests.testGetSingleUser(UserTests.java:47)oggger - *****Creating Single User*****
-00:24:06.645 [main] INFO  com.api.test.UserTests.testUpdateUser(UserTests.java:69)oggger - *****Updating User Information*****
-00:24:07.037 [main] INFO  com.api.test.UserTests.testDeleteUser(UserTests.java:77)oggger - *****Deleting User*****
-08:17:07.353 [main] INFO  com.api.test.User_bck_Tests.testCreateUser(User_bck_Tests.java:54)oggger - *****Creating User*****
-08:17:13.665 [main] INFO  com.api.test.User_bck_Tests.testGetUser(User_bck_Tests.java:37)oggger - *****Getting User information******
-08:17:13.983 [main] INFO  com.api.test.User_bck_Tests.testGetSingleUser(User_bck_Tests.java:46)oggger - *****Creating Single User*****
-08:17:14.266 [main] INFO  com.api.test.User_bck_Tests.testUpdateUser(User_bck_Tests.java:68)oggger - *****Updating User Information*****
-08:17:14.685 [main] INFO  com.api.test.User_bck_Tests.testDeleteUser(User_bck_Tests.java:76)oggger - *****Deleting User*****
-12:39:25.256 [main] INFO  com.api.test.User_bck_Tests.testDeleteUser(User_bck_Tests.java:76)oggger - *****Deleting User*****
-12:39:43.158 [main] INFO  com.api.test.User_bck_Tests.testRegisterSuccessful(User_bck_Tests.java:91)oggger - *****User is able to Register successfully*****
-12:46:10.004 [main] INFO  com.api.test.User_bck_Tests.testRegisterSuccessful(User_bck_Tests.java:91)oggger - *****User is able to Register successfully*****
-12:50:55.292 [main] INFO  com.api.test.User_bck_Tests.testRegisterSuccessful(User_bck_Tests.java:92)oggger - *****User is able to Register successfully*****
-12:53:49.084 [main] INFO  com.api.test.User_bck_Tests.testRegisterSuccessful(User_bck_Tests.java:93)oggger - *****User is able to Register successfully*****
-12:55:06.666 [main] INFO  com.api.test.User_bck_Tests.testRegisterSuccessful(User_bck_Tests.java:94)oggger - *****User is able to Register successfully*****
-12:56:33.666 [main] INFO  com.api.test.User_bck_Tests.testRegisterSuccessful(User_bck_Tests.java:93)oggger - *****User is able to Register successfully*****
-13:01:20.222 [main] INFO  com.api.test.User_bck_Tests.testRegisterSuccessful(User_bck_Tests.java:93)oggger - *****User is able to Register successfully*****
-13:02:44.094 [main] INFO  com.api.test.User_bck_Tests.testRegisterSuccessful(User_bck_Tests.java:92)oggger - *****User is able to Register successfully*****
-13:04:42.361 [main] INFO  com.api.test.User_bck_Tests.testRegisterSuccessful(User_bck_Tests.java:92)oggger - *****User is able to Register successfully*****
+14:50:36.466 [main] INFO  com.api.test.UserTests.testGetUser(UserTests.java:30)oggger - *****Getting User information******
+14:50:40.532 [main] INFO  com.api.test.UserTests.testGetSingleUser(UserTests.java:38)oggger - *****Creating Single User*****
+14:50:40.976 [main] INFO  com.api.test.UserTests.testCreateUser(UserTests.java:48)oggger - *****Creating User*****
+14:50:43.051 [main] INFO  com.api.test.UserTests.testUpdateUser(UserTests.java:63)oggger - *****Updating User Information*****
+14:50:43.538 [main] INFO  com.api.test.UserTests.testDeleteUser(UserTests.java:74)oggger - *****Deleting User*****
+14:50:43.976 [main] INFO  com.api.test.UserTests.testRegisterSuccessful(UserTests.java:84)oggger - *****User is able to Register successfully*****
+14:50:44.492 [main] INFO  com.api.test.UserTests.testRegisterUnSuccessful(UserTests.java:98)oggger - *****User is able to Register unsuccessfully*****
+14:50:44.915 [main] INFO  com.api.test.UserTests.testLoginSuccessful(UserTests.java:110)oggger - *****User is able to login successfully*****
+14:50:45.323 [main] INFO  com.api.test.UserTests.testLoginUnSuccessful(UserTests.java:122)oggger - *****User is able to login unsuccessfully*****
+14:50:45.735 [main] INFO  com.api.test.UserTests.testDelayedResponse(UserTests.java:132)oggger - *****There is delay in Response*****

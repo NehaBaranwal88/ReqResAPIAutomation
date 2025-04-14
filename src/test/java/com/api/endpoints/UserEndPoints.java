@@ -1,30 +1,41 @@
 package com.api.endpoints;
 import static io.restassured.RestAssured.given;
 
+import java.util.Properties;
+
+import com.api.payload.User;
+import com.api.utilities.ReadParamUtils;
+
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 
 public class UserEndPoints {
 	
+	static Properties queryParams=ReadParamUtils.RequestParams();
+	
+	//get User
 	public static Response GetUser()
 	{ 
+		String query_param=queryParams.getProperty("get_query_param");
 		Response response=given()
-         .queryParam("page", 2)
+         .queryParam("page",query_param )
      .when()
          .get(Routes.USERS);
 		 
 		return response;
 	}
 	
-	
-    public static Response GetSingleUser() {
+	// get Single User
+	public static Response GetSingleUser() {
+       String path_param=queryParams.getProperty("get_path_param");	
        Response response= given()
         .when()
-            .get(Routes.SINGLE_USER, 2);
+            .get(Routes.SINGLE_USER, path_param);
         return response;  
     }
     
-    public static Response CreateUser(String payload) {
+	//Create User
+    public static Response CreateUser(User payload) {
     	Response response= given()
             .contentType(ContentType.JSON)
             .body(payload)
@@ -33,71 +44,78 @@ public class UserEndPoints {
     	return response; 
     }
     
-    public static Response UpdateUser(String payload){
-    	
+    //Update User
+    public static Response UpdateUser(User payload){
+    	String path_param=queryParams.getProperty("get_path_param");	
     	Response response= given()
         .contentType(ContentType.JSON)
         .body(payload)
     .when()
-        .put(Routes.SINGLE_USER, 2);
+        .put(Routes.SINGLE_USER, path_param);
        return response;  	
     }
     
+    //Delete User
     public static Response DeleteUser(){
-    	
+    	String path_param=queryParams.getProperty("get_path_param");
     	Response response= given()
         .contentType(ContentType.JSON)
     .when()
-        .delete(Routes.SINGLE_USER, 2);
+        .delete(Routes.SINGLE_USER, path_param);
        return response;  	
     }
     
-    public static Response RegisterSuccessful(String payload) {
-        String requestBody = "{ \"email\": \"eve.holt@reqres.in\", \"password\": \"pistol\" }";
-
-        Response response= given()
+    //Register User Successfully
+    public static Response RegisterSuccessful(User payload) {
+        
+    Response response= given()
             .contentType(ContentType.JSON)
             .body(payload)
         .when()
             .post(Routes.REGISTER);
         return response;
     }
-    public static Response RegisterUnsuccessful(String payload) {
-        String requestBody = "{ \"email\": \"sydney@fife\" }";
-
-        Response response= given()
+    
+    //Register User Unsuccessfully
+    public static Response RegisterUnsuccessful(User payload) {
+       
+    Response response= given()
             .contentType(ContentType.JSON)
             .body(payload)
         .when()
-            .post("/register");
+            .post(Routes.REGISTER);
         return response;
     }
     
-    public static Response SuccessfulLogin(String payload) {
+    //User login Successfully
+    public static Response SuccessfulLogin(User payload) {
 
     	Response response= given()
             .contentType(ContentType.JSON)
             .body(payload)
         .when()
-            .post("/login");
+            .post(Routes.LOGIN);
         return response;    
     }
     
-    public static Response UnsuccessfulLogin(String payload) {
+    //User login Unsuccessfully
+    public static Response UnsuccessfulLogin(User payload) {
 
     	Response response= given()
             .contentType(ContentType.JSON)
             .body(payload)
         .when()
-            .post("/login");
+            .post(Routes.LOGIN);
         return response;
     } 
     
+    //Delayed Response
     public static Response DelayedResponse() {
+    	String query_param=queryParams.getProperty("delay_query_param");
     	Response response= given()
-            .queryParam("delay", 3)
+            .queryParam("delay", query_param)
         .when()
-            .get("/users");
+            .get(Routes.USERS);
         return response;
     }
 

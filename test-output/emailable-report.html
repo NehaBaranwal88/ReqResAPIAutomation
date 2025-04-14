@@ -8,46 +8,20 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">3,066</td><td></td><td></td></tr>
+<tr><th colspan="8">API_Suite</th></tr>
+<tr><td><a href="#t0">API_Test</a></td><td class="num">10</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">13,240</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.api.test.User_bck_Tests</td><td><a href="#m0">testRegisterSuccessful</a></td><td rowspan="1">1744529681905</td><td rowspan="1">2544</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">API_Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">API_Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="10">com.api.test.UserTests</td><td><a href="#m0">testCreateUser</a></td><td rowspan="1">1744622440711</td><td rowspan="1">2333</td></tr><tr class="passedeven"><td><a href="#m1">testDelayedResponse</a></td><td rowspan="1">1744622445733</td><td rowspan="1">2374</td></tr><tr class="passedeven"><td><a href="#m2">testDeleteUser</a></td><td rowspan="1">1744622443536</td><td rowspan="1">435</td></tr><tr class="passedeven"><td><a href="#m3">testGetSingleUser</a></td><td rowspan="1">1744622440530</td><td rowspan="1">178</td></tr><tr class="passedeven"><td><a href="#m4">testGetUser</a></td><td rowspan="1">1744622436441</td><td rowspan="1">4060</td></tr><tr class="passedeven"><td><a href="#m5">testLoginSuccessful</a></td><td rowspan="1">1744622444913</td><td rowspan="1">404</td></tr><tr class="passedeven"><td><a href="#m6">testLoginUnSuccessful</a></td><td rowspan="1">1744622445321</td><td rowspan="1">409</td></tr><tr class="passedeven"><td><a href="#m7">testRegisterSuccessful</a></td><td rowspan="1">1744622443974</td><td rowspan="1">460</td></tr><tr class="passedeven"><td><a href="#m8">testRegisterUnSuccessful</a></td><td rowspan="1">1744622444437</td><td rowspan="1">473</td></tr><tr class="passedeven"><td><a href="#m9">testUpdateUser</a></td><td rowspan="1">1744622443049</td><td rowspan="1">484</td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">com.api.test.User_bck_Tests#testRegisterSuccessful</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [200] but found [400]
-	at org.testng.Assert.fail(Assert.java:110)
-	at org.testng.Assert.failNotEquals(Assert.java:1577)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
-	at org.testng.Assert.assertEquals(Assert.java:131)
-	at org.testng.Assert.assertEquals(Assert.java:1418)
-	at org.testng.Assert.assertEquals(Assert.java:1382)
-	at org.testng.Assert.assertEquals(Assert.java:1428)
-	at com.api.test.User_bck_Tests.testRegisterSuccessful(User_bck_Tests.java:95)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-	at org.testng.TestRunner.privateRun(TestRunner.java:829)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-	at org.testng.TestNG.runSuites(TestNG.java:1099)
-	at org.testng.TestNG.run(TestNG.java:1067)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>API_Test</h2><h3 id="m0">com.api.test.UserTests#testCreateUser</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.api.test.UserTests#testDelayedResponse</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.api.test.UserTests#testDeleteUser</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.api.test.UserTests#testGetSingleUser</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">com.api.test.UserTests#testGetUser</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">com.api.test.UserTests#testLoginSuccessful</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">com.api.test.UserTests#testLoginUnSuccessful</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">com.api.test.UserTests#testRegisterSuccessful</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">com.api.test.UserTests#testRegisterUnSuccessful</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">com.api.test.UserTests#testUpdateUser</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

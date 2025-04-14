@@ -1,7 +1,7 @@
 package com.api.endpoints;
 
 public class Routes {
-	//base url
+    //base url
 	public static String Base_URL="https://reqres.in/api";
 	
 	//end points
